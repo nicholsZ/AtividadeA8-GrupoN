@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class EmpregadoTerceirizadoTeste {
+public class EmpregadoTerceirizadoTest {
 
 	@Test
 	public void testSetAdicional() {
