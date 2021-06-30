@@ -1,5 +1,11 @@
 package com.teste;
 
+/**
+ * 
+ * @author Nicholas
+ * Integrando ao GitHub o projeto
+ */
+
 public class Empregado extends EmpregadoTerceirizado{
 
 		public String nome;
