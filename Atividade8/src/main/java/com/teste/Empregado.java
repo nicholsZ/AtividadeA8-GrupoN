@@ -2,8 +2,8 @@ package com.teste;
 
 /**
  * 
- * @author Nicholas
- * Integrando ao GitHub o projeto Atividade8
+ * @author Nicholas - nicholsz
+ * Classe Empregado Criada - nicholsz
  */
 
 public class Empregado{
