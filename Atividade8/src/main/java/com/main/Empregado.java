@@ -6,18 +6,38 @@ package com.main;
  * Classe Empregado Criada - nicholsz
  */
 
-public class Empregado{
+public class Empregado extends EmpregadoTerceirizado{
 
-		public String nome;
-		public int horas;
-		public double valorPorHora;
+	public String nome;
+	public int horas;
+	public double valorPorHora;
+	
+	public Empregado(String nome, int horas, double valorPorHora, double adicional) {
+		super();
+		this.nome = nome;
+		this.horas = horas;
+		this.valorPorHora = valorPorHora;
+		this.adicional = adicional;
+	}
+	
+	
+	public double realizarPagamento() {
 		
-		public Empregado(String nome, int horas, double valorPorHora, double adicional) {
-			super();
-			this.nome = nome;
-			this.horas = horas;
-			this.valorPorHora = valorPorHora;		
+		double pagamento;
+		
+		pagamento = (valorPorHora * horas) + adicional;
+		
+		if (pagamento >= 1100) {
+			System.out.println("Valor do pagamento de " +nome+ ": " + pagamento);
 		}
+		else {
+			pagamento = 1100;
+			System.out.println("Valor do pagamento de " +nome+ ": " + pagamento);
+		}
+		
+		return pagamento;
+		
+	}
 }
 
 	
