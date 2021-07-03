@@ -1,14 +1,16 @@
 package com.test;
 
-
-
 import org.junit.Assert;
 import org.junit.Test;
-
 import com.main.Empregado;
 
-
-
+/**
+ * 
+ * @author Nicholas - nicholsz
+ * Classe EmpregadoTest Atualizada - nicholsz
+ * Issue #8 m√©todo Metodos de Testes
+ * 
+ */
 public class EmpregadoTest {
 
 	@Test
@@ -23,7 +25,7 @@ public class EmpregadoTest {
 	@Test
 	public void testRealizarPagamentoMenor() {
 		
-		/* 30 * 30 = 900, com a condiÁ„o 1100 È o esperado*/
+		/* 30 * 30 = 900, com a condi√ß√£o 1100 √© o esperado*/
 		Empregado funcionario2 = new Empregado("Maria", 30, 30, 0);
 		
 		Assert.assertEquals(1100, funcionario2.realizarPagamento(), 0.00001);
@@ -32,7 +34,7 @@ public class EmpregadoTest {
 	@Test
 	public void testRealizarPagamentoIgual() {
 		
-		/* (30 * 30) + 200 = 1100 È o esperado*/
+		/* (30 * 30) + 200 = 1100 √© o esperado*/
 		Empregado funcionario3 = new Empregado("Joao", 30, 30, 200);
 		
 		Assert.assertEquals(1100, funcionario3.realizarPagamento(), 0.00001);
