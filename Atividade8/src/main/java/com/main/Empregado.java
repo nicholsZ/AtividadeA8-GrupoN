@@ -3,7 +3,9 @@ package com.main;
 /**
  * 
  * @author Nicholas - nicholsz
- * Classe Empregado Criada - nicholsz
+ * Classe Empregado Atualizada - nicholsz
+ * Issue #8 método realizarPagamento
+ * Atualização da Classe Empregado, construtor e método, extends
  */
 
 public class Empregado extends EmpregadoTerceirizado{
@@ -20,7 +22,6 @@ public class Empregado extends EmpregadoTerceirizado{
 		this.adicional = adicional;
 	}
 	
-	
 	public double realizarPagamento() {
 		
 		double pagamento;
@@ -35,8 +36,7 @@ public class Empregado extends EmpregadoTerceirizado{
 			System.out.println("Valor do pagamento de " +nome+ ": " + pagamento);
 		}
 		
-		return pagamento;
-		
+		return pagamento;		
 	}
 }
 
