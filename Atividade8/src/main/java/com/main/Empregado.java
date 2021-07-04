@@ -3,8 +3,8 @@ package com.main;
 /**
  * 
  * @author Nicholas - nicholsz
- * Classe Empregado Atualizada - nicholsz
- * Issue #11 Metodos de Testes para setValorPorHora feitos
+ * Classe Empregado Atualizada com todos os métodos - nicholsz
+ * Issue #13 Metodos Aplicados 
  */
 
 public class Empregado extends EmpregadoTerceirizado{
@@ -21,6 +21,7 @@ public class Empregado extends EmpregadoTerceirizado{
 		this.adicional = adicional;
 	}
 	
+	// Método realizarPagamento
 	public double realizarPagamento() {
 		
 		double pagamento;
@@ -38,19 +39,23 @@ public class Empregado extends EmpregadoTerceirizado{
 		return pagamento;		
 	}
 	
+	// Método getNome
 	public String getNome() {
 		return nome;
 	}
 
+	// Método setNome
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
 
+	// Método getHoras
 	public int getHoras() {
 		System.out.println("A quantidade de horas de " +nome+ ": " + horas);
 		return horas;
 	}
 
+	// Método setHoras
 	public void setHoras(int horas) {
 		if (horas > 40) {
 			throw new IllegalArgumentException("Digite a quantidade de horas maior/igual a 0 e menor/igual a 40");
@@ -63,11 +68,13 @@ public class Empregado extends EmpregadoTerceirizado{
 		}		
 	}
 	
+	// Método getValorPorHora
 	public double getValorPorHora() {
 		System.out.println("O valor por Hora de " +nome+ ": " + valorPorHora);
 		return valorPorHora;
 	}
 
+	// Método setValorPorHora
 	public void setValorPorHora(double valorPorHora) {
 		
 		if (valorPorHora < 30) {
