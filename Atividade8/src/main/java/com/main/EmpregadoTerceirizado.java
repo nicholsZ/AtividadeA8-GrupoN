@@ -3,7 +3,8 @@ package com.main;
 /**
  * 
  * @author Nicholas - nicholsz
- * Classe EmpregadoTerceirizado Atualizada com setAdicional - nicholsz
+ * Classe EmpregadoTerceirizado Atualizada - nicholsz
+ * Issue #12 Metodos de Testes para setAdicionalVazio feitos
  */
 public class EmpregadoTerceirizado {
 	
@@ -23,6 +24,24 @@ public class EmpregadoTerceirizado {
 		}
 		else {
 			return adicional;
+		}	
+	}	
+	
+	public double getAdicionalVazio() {
+		System.out.println("O valor adicional: " + adicional);
+		return adicional;
+	}
+	
+	public void setAdicionalVazio(double adicional) {
+		
+		if (adicional < 100) {
+			throw new IllegalArgumentException("Valor minimo R$100,00 / Valor máximo R$1100");
+		}
+		else if (adicional > 1100) {
+			throw new IllegalArgumentException("Valor minimo R$100,00 / Valor máximo R$1100");
+		}
+		else {
+			this.adicional = adicional;	
 		}	
 	}	
 }

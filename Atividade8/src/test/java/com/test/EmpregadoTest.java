@@ -10,7 +10,7 @@ import com.main.Empregado;
  * 
  * @author Nicholas - nicholsz
  * Classe EmpregadoTest Atualizada - nicholsz
- * Issue #11 Metodos de Testes para setValorPorHora feitos
+ * Issue #12 Metodos de Testes para setAdicional feitos
  */
 public class EmpregadoTest {
 

@@ -3,7 +3,7 @@ package com.main;
 /**
  * 
  * @author Nicholas - nicholsz
- * Classe EmpregadoTest Atualizada - nicholsz
+ * Classe Empregado Atualizada - nicholsz
  * Issue #11 Metodos de Testes para setValorPorHora feitos
  */
 

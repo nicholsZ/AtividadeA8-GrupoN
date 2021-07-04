@@ -7,7 +7,7 @@ import com.main.Empregado;
 /**
  * 
  * @author Nicholas - nicholsz
- * Classe EmpregadoTerceirizadoTeste Atualizada com testes - nicholsz
+ * Classe EmpregadoTerceirizadoTeste atualizada com testes de SetAdicionalVazio - nicholsz
  */
 
 public class EmpregadoTerceirizadoTeste {
@@ -34,6 +34,43 @@ public class EmpregadoTerceirizadoTeste {
 		Empregado funcionarioT = new Empregado("Maria", 30, 30, 50);
 		
 		Assert.assertEquals(50, funcionarioT.setAdicional(), 0.00001);
+	}
+	
+	
+	@Test
+	public void testSetAdicionalVazioIgual() {
+		
+		Empregado funcionarioAV = new Empregado("Marieva", 30, 30, 500);
+		
+		double adicionalV = 500;
+		
+		funcionarioAV.setAdicionalVazio(adicionalV);
+		
+		Assert.assertEquals(500, funcionarioAV.getAdicionalVazio(), 0.00001);
+	}
+	
+	@Test
+	public void testSetAdicionalVazioMaior() {
+		
+		Empregado funcionarioAV = new Empregado("Julieta", 30, 30, 1500);
+		
+		double adicionalV = 1500;
+		
+		funcionarioAV.setAdicionalVazio(adicionalV);
+		
+		Assert.assertEquals(1500, funcionarioAV.getAdicionalVazio(), 0.00001);
+	}
+	
+	@Test
+	public void testSetAdicionalVazioMenor() {
+		
+		Empregado funcionarioAV = new Empregado("Katia", 30, 30, 50);
+		
+		double adicionalV = 50;
+		
+		funcionarioAV.setAdicionalVazio(adicionalV);
+		
+		Assert.assertEquals(50, funcionarioAV.getAdicionalVazio(), 0.00001);
 	}
 
 }
