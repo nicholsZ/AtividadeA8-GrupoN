@@ -3,17 +3,19 @@ package com.main;
 /**
  * 
  * @author Nicholas - nicholsz
- * Classe EmpregadoTerceirizado Atualizada - nicholsz
- * Issue #12 Metodos de Testes para setAdicionalVazio feitos
+ * Classe EmpregadoTerceirizado atualizada com todos os métodos - nicholsz
+ * Issue #14 Metodos Aplicados 
  */
 public class EmpregadoTerceirizado {
 	
 	public double adicional;
 	
+	// Método getAdicional
 	public double getAdicional() {
 		return adicional;
 	}
 
+	// Método setAdicional
 	public double setAdicional() {
 		
 		if (adicional < 100) {
@@ -27,11 +29,13 @@ public class EmpregadoTerceirizado {
 		}	
 	}	
 	
+	// Método getAdicionalVazio
 	public double getAdicionalVazio() {
 		System.out.println("O valor adicional: " + adicional);
 		return adicional;
 	}
 	
+	// Método setAdicionalVazio
 	public void setAdicionalVazio(double adicional) {
 		
 		if (adicional < 100) {
