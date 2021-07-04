@@ -38,6 +38,31 @@ public class Empregado extends EmpregadoTerceirizado{
 		
 		return pagamento;		
 	}
+	
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public int getHoras() {
+		System.out.println("A quantidade de horas de " +nome+ ": " + horas);
+		return horas;
+	}
+
+	public void setHoras(int horas) {
+		if (horas > 40) {
+			throw new IllegalArgumentException("Digite a quantidade de horas maior/igual a 0 e menor/igual a 40");
+		}
+		else if (horas < 0) {
+			throw new IllegalArgumentException("Digite a quantidade de horas maior/igual a 0 e menor/igual a 40");
+		}
+		else {
+			this.horas = horas;	
+		}		
+	}
 }
 
 	
