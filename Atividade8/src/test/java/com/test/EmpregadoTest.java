@@ -10,8 +10,7 @@ import com.main.Empregado;
  * 
  * @author Nicholas - nicholsz
  * Classe EmpregadoTest Atualizada - nicholsz
- * Issue #10 Metodos de Testes para setHoras feitos
- * 
+ * Issue #11 Metodos de Testes para setValorPorHora feitos
  */
 public class EmpregadoTest {
 
@@ -57,7 +56,7 @@ public class EmpregadoTest {
 	@Test
 	public void testSetHorasMaior() {
 		
-		Empregado funcionarioSH = new Empregado("Joao", 50, 30, 500);
+		Empregado funcionarioSH = new Empregado("Roberto", 50, 30, 500);
 		
 		int horasSH = 50;
 		
@@ -69,7 +68,7 @@ public class EmpregadoTest {
 	@Test
 	public void testSetHorasMenor() {
 		
-		Empregado funcionarioSH = new Empregado("Joao", -10, 30, 500);
+		Empregado funcionarioSH = new Empregado("Mario", -10, 30, 500);
 		
 		int horasSH = -10;
 		
@@ -77,6 +76,44 @@ public class EmpregadoTest {
 		
 		assertEquals(funcionarioSH.getHoras(), horasSH);
 	}
+	
+	@Test
+	public void testSetValorPorHoraIgual() {
+		
+		Empregado funcionarioVPH = new Empregado("Claudio", 30, 100, 500);
+		
+		double valorPH = 100;
+		
+		funcionarioVPH.setValorPorHora(valorPH);
+		
+		Assert.assertEquals(100, funcionarioVPH.getValorPorHora(), 0.00001);
+	}
+	
+	@Test
+	public void testSetValorPorHoraMaior() {
+		
+		Empregado funcionarioVPH = new Empregado("Julio", 30, 300, 500);
+		
+		double valorPH = 300;
+		
+		funcionarioVPH.setValorPorHora(valorPH);
+		
+		Assert.assertEquals(300, funcionarioVPH.getValorPorHora(), 0.00001);
+	}
+	
+	@Test
+	public void testSetValorPorHoraMenor() {
+		
+		Empregado funcionarioVPH = new Empregado("Marieva", 30, 20, 500);
+		
+		double valorPH = 20;
+		
+		funcionarioVPH.setValorPorHora(valorPH);
+		
+		Assert.assertEquals(20, funcionarioVPH.getValorPorHora(), 0.00001);
+	}
+	
+	
 }
 
 
